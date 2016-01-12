@@ -5,6 +5,7 @@
 </head>
 <body>
 <div class="container">
+	  <div id="page-wrap">
 
     <header class="row">
         @include('includes.header')
