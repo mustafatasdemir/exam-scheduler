@@ -1,17 +1,35 @@
+<!-- Metadata -->
 <meta charset="utf-8">
 <meta name="description" content="">
-<meta name="author" content="Scotch">
+<meta name="author" content="ironstone">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Super Cool Layouts</title>
+<!-- Title -->
+<title>Sınav Atama Sistemi</title>
 
-<!--<link rel="stylesheet" href="{{ URL::asset('css/dropdown2.css') }}" />-->
-<link rel="stylesheet" href="{{ URL::asset('css/dropotron.main.css') }}" />
-<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}" />
-<!-- load bootstrap from a cdn -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+<!-- Fonts -->
+<link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.4.4.0.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('css/google_fonts.css') }}" />
 
-<script type="text/javascript" src="{{ URL::asset('js/jquery-2.2.0.min.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/jquery.dropotron.min.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/jquery.dropotron.skel.min.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/jquery.dropotron.util.js') }}"></script>
-<script type="text/javascript" src="{{ URL::asset('js/jquery.dropotron.main.js') }}"></script>
+<!-- Stylesheets -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+{{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+
+
+<!-- Custom Styles -->
+<style>
+    body {
+        font-family: 'Lato';
+    }
+
+    .fa-btn {
+        margin-right: 6px;
+    }
+</style>
+
+
+
+
+<!-- Javascript -->
+<!--<script type="text/javascript" src="{{ URL::asset('js/jquery-2.2.0.min.js') }}"></script>-->

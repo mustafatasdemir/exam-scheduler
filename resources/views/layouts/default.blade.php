@@ -1,23 +1,23 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     @include('includes.head')
 </head>
-<body>
+<body id="app-layout">
+<header>
+    @include('includes.header')
+</header>
 <div class="container">
 	  <div id="page-wrap">
 
-    <header class="row">
-        @include('includes.header')
-    </header>
 
-    <div id="main" class="row">
+    <div>
 
             @yield('content')
 
     </div>
 
-    <footer class="row">
+    <footer>
         @include('includes.footer')
     </footer>
 

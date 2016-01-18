@@ -11,24 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
 
-
-Route::get('about', function () {
-    return view('pages.about');
-});
-
-
-Route::get('projects', function () {
-    return view('pages.projects');
-});
-
-
-Route::get('contact', function () {
-    return view('pages.contact');
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -43,4 +26,30 @@ Route::get('contact', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    //Route::get('/home', 'HomeController@index');
+
+    Route::get('/', function () {
+        return view('pages.home');
+    });
+
+
+
+    Route::get('about', function () {
+        return view('pages.about');
+    });
+
+
+    Route::get('projects', function () {
+        return view('pages.projects');
+    });
+
+
+    Route::get('contact', function () {
+        return view('pages.contact');
+    });
 });
