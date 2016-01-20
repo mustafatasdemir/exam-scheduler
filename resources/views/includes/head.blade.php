@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/google_fonts.css') }}" />
 
 <!-- Stylesheets -->
+<link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
