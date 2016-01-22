@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Models\Classroom as Classroom;
 
 class HomeController extends Controller
 {
@@ -24,6 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $deneme = DB::table('classrooms')->where('active', true)->get();
+        $classroom = Classroom::create(['name' => 'Flight 10', 'description' => 'asd', 'capacity' => 10, 'active' => true]);
+        return view('pages.home')->with('count', count($deneme));
     }
 }
